@@ -3,9 +3,9 @@
   <div class="container">
     <div class="footer-menu-wrapper">
       <?php
-      if ( has_nav_menu( 'footer-menu' ) ) :
-      wp_nav_menu( array( 'theme_location' => 'footer-menu', 'menu_class' => 'nav nav-pills' ) );
-      endif;
+      if ( has_nav_menu( 'footer-menu' ) ) {
+        wp_nav_menu( array( 'theme_location' => 'footer-menu', 'menu_class' => 'nav nav-pills' ) );
+      }
       ?>
     </div>
     <?php do_action( 'hji_theme_before_footer_widgets' ); ?>
