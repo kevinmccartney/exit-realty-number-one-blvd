@@ -1,34 +1,35 @@
 <div class="top-header">
 
-    <div class="row">
-	  
-        <div class="col-md-6 user-signup-header">
-            
-		  	<?php /* do_action( 'hjiUserGetSignUpMessage' ); */ ?>
+    <div class="container-fluid">
 
-            <?php do_action( 'hjiUserGetSignUpLink' ); ?>
+        <div class="row">
 
-            <?php do_action( 'hjiUserGetWelcomeMessage' ); ?>
+            <div class="col-md-6 user-signup-header">
 
-            <?php do_action( 'hjiUserGetFavoritesLink' ); ?>
+                <?php do_action( 'hjiUserGetSignUpLink' ); ?>
 
-            <?php do_action( 'hjiUserGetSavedSearchesLink' ); ?>
+                <?php do_action( 'hjiUserGetWelcomeMessage' ); ?>
 
-            <?php do_action( 'hjiUserGetLogoutLink' ); ?>
-        
-        </div>
-      
-        <div class="col-md-6">
+                <?php do_action( 'hjiUserGetFavoritesLink' ); ?>
 
-            <?php if ( is_active_sidebar( 'blvd-topbar-sidebarwidgets' ) ) : ?>
+                <?php do_action( 'hjiUserGetSavedSearchesLink' ); ?>
 
-                <div class="top-header-widgets row">
+                <?php do_action( 'hjiUserGetLogoutLink' ); ?>
+            </div>
 
-                    <?php dynamic_sidebar( 'blvd-topbar-sidebarwidgets' ); ?>
+            <div class="col-md-6">
 
-                </div>
+                <?php if ( is_active_sidebar( 'blvd-topbar-sidebarwidgets' ) ) : ?>
 
-            <?php endif; ?>
+                    <div class="footer-widgets row">
+
+                        <?php dynamic_sidebar( 'blvd-topbar-sidebarwidgets' ); ?>
+
+                    </div>
+
+                <?php endif; ?>
+
+            </div>
 
         </div>
 

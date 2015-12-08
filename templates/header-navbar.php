@@ -20,7 +20,4 @@
 
     <?php do_action( 'hji_theme_after_navbar_nav' ); ?>
 
-
-    </div>
-
 </header>
