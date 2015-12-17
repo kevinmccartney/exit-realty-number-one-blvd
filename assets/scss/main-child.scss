@@ -1,26 +1,74 @@
-@import('https://fonts.googleapis.com/css?family=Dancing+Script');
+///////////////////////////////////////////////////////////////////////////
+////////                  Dawn Houlf sylesheet                     ///////
+/////     all custom css by kevin mccartney for homejunction inc.     /////
+///////////////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////
+// $contents                              //
+//      $mixins/vars/imports    [_mxns_]  //
+//      $global/resets          [_glob_]  //
+//      $header                 [_head_]  //
+//      $home-page              [_home_]  //
+//      $content-pages          [_cont_]  //
+//      $footer                 [_foot_]  //
+////////////////////////////////////////////
+
+////////////////////////////////////////
+//    $mixins/vars/imports    [_mxns_]
+////////////////////////////////////////
+
+// PSA:
+// I know I said imports, but really don't import here
+// unless they are about to cut your arm off.
+
+// color vars- these can be trimmed at your discretion
 $brand-primary-light-20: lighten($brand-primary, 20%);
+// $brand-primary-light-30: lighten($brand-primary, 30%);
+// $brand-primary-light-40: lighten($brand-primary, 40%);
+// $brand-primary-light-50: lighten($brand-primary, 50%);
+
 $brand-primary-dark-20: darken($brand-primary, 20%);
 $brand-primary-dark-30: darken($brand-primary, 30%);
+// $brand-primary-dark-40: darken($brand-primary, 40%);
+// $brand-primary-dark-50: darken($brand-primary, 50%);
+
 $white: #fff;
 $black: #000;
+// $grey: #808080;
 
+// $grey-light-20: lighten($grey, 20%);
+// $grey-light-30: lighten($grey, 30%);
+// $grey-light-40: lighten($grey, 40%);
+// $grey-light-50: lighten($grey, 50%);
+
+// $grey-dark-20: darken($grey, 20%);
+// $grey-dark-30: darken($grey, 30%);
+// $grey-dark-40: darken($grey, 40%);
+// $grey-dark-50: darken($grey, 50%);
+
+// a mixin for a custom hover effect. Can set several properties related to link hover behavior.
+// uncomment the commented lines for even more functionality.
 @mixin pretty_hover($pretty_decoration,
+                    // $pretty_shadow,
                     $pretty_color,
+                    // $pretty_bg_color,
                     $pretty_trans) {
     transition: $pretty_trans;
     &:hover,
     &:active {
         text-decoration: $pretty_decoration;
+        // text-shadow: $pretty_shadow;
         color: $pretty_color !important;
+        // background-color: $pretty_bg_color !important;
     }
 }
 
+// for the sake of brevity? I like mixins....
 @mixin no_borders {
     border: 0;
 }
 
+// this mixin styles the active tabs in Geofarms, etc.
 @mixin tab_styling {
     @include no_borders;
     background-color: $brand-primary;
@@ -28,20 +76,26 @@ $black: #000;
     color: #fff;
 }
 
+// So in Bootstrap 4, there will be a $screen-xs AND $screen-xxs, so $screen-xs will
+// take over the functionality of this mixin
+// https://github.com/twbs/bootstrap/issues/14504
+// Until then, I made this.
 @mixin mobile_landscape {
     $mobile_landscape_min: 480px;
     $mobile_landscape_max: 767px;
     @media(min-width: $mobile_landscape_min) and (max-width: $mobile_landscape_max) { @content; }
 }
 
-a.listing-title {
+////////////////////////////////////////
+//    $global/resets   [_glob_]
+////////////////////////////////////////
+
+// applies the pretty_hover mixin to all rIDX pod titles
+a.listing-title h4 {
     @include pretty_hover(none, $brand-primary, ease 0.35s);
-    color: $brand-primary;
-    h4 {
-        @include pretty_hover(none, $brand-primary, ease 0.35s);
-    }
 }
 
+// no borders, please
 .tab-content,
 .banner .top-header,
 ul.nav.nav-tabs,
@@ -51,6 +105,7 @@ ul.nav.nav-tabs,
     @include no_borders;
 }
 
+// makes the rIDX listings grid 3/4 width centered on the screen on $screen-xs
 .idx-results {
     @include mobile_landscape {
         width: 75%;
@@ -65,188 +120,7 @@ ul.nav.nav-tabs,
     @include tab_styling;
 }
 
-////////////////////////////////////////
-//    $header   [_head_]
-////////////////////////////////////////
 
-.header-widgets.container {
-    @media(min-width: $grid-float-breakpoint) {
-        width: 98%;
-    }
-}
-
-.blvd-responsive-menu ul li {
-    border-right: 1px solid $brand-primary-light-20;
-    &:last-child {
-        border-right: none;
-    }
-}
-
-// styling for the user sign-in header
-.user-signup-header {
-    .hji-user-signup {
-        // inserts a font awesome icon before the login text
-        &:before {
-            color: #fff;
-            content: "\f084";
-            font-family: FontAwesome;
-            margin-right: 0 15px 0 0;
-            padding: 5px;
-            background-color: darken($brand-primary, 5%);
-            margin-right: 0.75rem;
-        }
-        &:hover {
-            text-decoration: none;
-        }
-    }
-}
-
-// styling for the menu in the top-header area
-.top-header-widgets .nav-pills {
-    li.current-menu-item  a {
-        background-color: $brand-primary;
-        color: $white;
-        &:focus,
-        &:hover,
-        &:active {
-            background-color: $brand-primary;
-            color: $white;
-        }
-    }
-    li a {
-        font-family: $navbar-font-family;
-        font-size: 1rem;
-        text-transform: uppercase;
-        padding: 5px 10px;
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: $brand-primary;
-            color: $white;
-        }
-    }
-}
-
-// styling for the mobile menu hamburger toggle
-.navbar-default .navbar-toggle {
-    border: 0;
-    background-color: $brand-primary;
-    &:hover,
-    &:focus,
-    &:active {
-        border: 0;
-        background-color: $brand-primary-light-20;
-    }
-}
-
-// styling for the number in the header
-.number-custom-contact {
-    margin: 0;
-    @media(min-width: $grid-float-breakpoint) {
-        margin-top: 5rem;
-    }
-}
-
-// styling for the menu above the $grid-float-breakpoint
-.banner .header-widgets .blvd-responsive-menu {
-    @media (min-width: $grid-float-breakpoint) {
-        padding: 10px 0px;
-        background: $brand-primary;
-        border-radius: 4px;
-    }
-}
-
-// this block sets styles the dropdown items in the main menu
-.blvd-responsive-menu .dropdown-menu > li > a {
-    &:hover,
-    &:active,
-    &:focus {
-        color: $white;
-        background-color: $brand-primary;
-        text-decoation: none;
-    }
-}
-
-.blvd-responsive-menu .nav > li > a {
-    // padding: 10px 5px;
-}
-
-// styling for the tagline text in the header
-.custom-header-text h2 {
-    font-size: 2.8em;
-    text-align: center;
-    line-height: 1.1em;
-    margin-top: 10rem;
-}
-
-// styles the phone number in the header
-.big_phone {
-  color: $black;
-  font-size: 4rem;
-  line-height: 1em;
-  padding: 10px 0px 0px;
-
-}
-
-.header-custom-contact {
-    margin-top: 5rem;
-}
-
-// styles the email text in the header
-.email_text{
-    font-size: 13px;
-    letter-spacing: 1px;
-    @media (min-width: $grid-float-breakpoint) {
-        font-size: 15px;
-    }
-}
-
-// the checklist button
-.btn-header-cta {
-    color: #333;
-    background-color: #f0f0f0;
-    border-color: #c2c2c2;
-    margin-top: 1rem;
-    padding: 1rem 10%;
-}
-
-// styles for the whole header contact section
-.number-center {
-  display: inline;
-  @media (max-width: $grid-float-breakpoint){
-    display: none;
-  }
-}
-
-.custom-header-menu ul li {
-    float: right;
-}
-
-.socialmedia-header {
-    font-size: 2rem;
-    text-align: right;
-}
-
-.banner .top-header {
-    padding: 10px 3rem;
-}
-
-a.navbar-brand {
-    width: 75%;
-    @media(min-width: 480px) {
-        width: 35%;
-    }
-    @media(min-width: $screen-md) {
-        width: 25%;
-    }
-    @media(min-width: $grid-float-breakpoint) {
-        width: 100%;
-    }
-}
-
-.blvd-responsive-menu ul.nav.navbar-nav {
-    background-color: $brand-primary;
-}
 
 ////////////////////////////////////////
 //    $home-page    [_home_]

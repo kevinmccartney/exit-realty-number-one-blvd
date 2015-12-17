@@ -1,0 +1,210 @@
+////////////////////////////////////////
+//    $header   [_head_]
+////////////////////////////////////////
+
+.header-widgets.container {
+    @media(min-width: $grid-float-breakpoint) {
+        width: 98%;
+    }
+}
+
+.blvd-responsive-menu ul li {
+    @media(min-width: $grid-float-breakpoint) {
+        border-right: 1px solid $brand-primary-light-20;
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+// styling for the user sign-in header
+.user-signup-header {
+    .hji-user-signup {
+        // inserts a font awesome icon before the login text
+        &:before {
+            color: #fff;
+            content: "\f084";
+            font-family: FontAwesome;
+            margin-right: 0 15px 0 0;
+            padding: 5px;
+            background-color: darken($brand-primary, 5%);
+            margin-right: 0.75rem;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+// styling for the menu in the top-header area
+.top-header-widgets .nav-pills {
+    li.current-menu-item  a {
+        background-color: $brand-primary;
+        color: $white;
+        &:focus,
+        &:hover,
+        &:active {
+            background-color: $brand-primary;
+            color: $white;
+        }
+    }
+    li a {
+        font-family: $navbar-font-family;
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $brand-primary;
+            color: $white;
+        }
+    }
+}
+
+// styling for the mobile menu hamburger toggle
+.navbar-default .navbar-toggle {
+    border: 0;
+    background-color: $brand-primary;
+    &:hover,
+    &:focus,
+    &:active {
+        border: 0;
+        background-color: $brand-primary-light-20;
+    }
+}
+
+// styling for the number in the header
+.number-custom-contact {
+    margin: 0;
+    @media(min-width: $grid-float-breakpoint) {
+        margin-top: 5rem;
+    }
+}
+
+// styling for the menu above the $grid-float-breakpoint
+.banner .header-widgets .blvd-responsive-menu {
+    @media (min-width: $grid-float-breakpoint) {
+        padding: 10px 0px;
+        background: $brand-primary;
+        border-radius: 4px;
+    }
+}
+
+// this block sets styles the dropdown items in the main menu
+.blvd-responsive-menu .dropdown-menu > li > a {
+    &:hover,
+    &:active,
+    &:focus {
+        color: $white;
+        background-color: $brand-primary;
+        text-decoration: none;
+        @media(min-width: $grid-float-breakpoint) {
+
+        }
+    }
+}
+
+.blvd-responsive-menu .nav li ul li a,
+.blvd-responsive-menu .nav li a {
+    @media(max-width: $grid-float-breakpoint) {
+        color: $brand-primary !important;
+        &:hover,
+        &:active,
+        &:focus {
+            color: $brand-primary-dark-20 !important;
+        }
+
+    }
+}
+
+// .blvd-responsive-menu .nav li ul li a {
+//     @media(max-width: $grid-float-breakpoint) {
+//         color: $brand-primary;
+//         &:hover,
+//         &:active,
+//         &:focus {
+//             color: $brand-primary-dark-20;
+//         }
+
+//     }
+// }
+
+// styling for the tagline text in the header
+.custom-header-text h2 {
+    font-size: 2.8em;
+    text-align: center;
+    line-height: 1.1em;
+    margin-top: 10rem;
+}
+
+// styles the phone number in the header
+.big_phone {
+  color: $black;
+  font-size: 4rem;
+  line-height: 1em;
+  padding: 10px 0px 0px;
+
+}
+
+.header-custom-contact {
+    margin-top: 5rem;
+}
+
+// styles the email text in the header
+.email_text{
+    font-size: 13px;
+    letter-spacing: 1px;
+    @media (min-width: $grid-float-breakpoint) {
+        font-size: 15px;
+    }
+}
+
+// the checklist button
+.btn-header-cta {
+    color: #333;
+    background-color: #f0f0f0;
+    border-color: #c2c2c2;
+    margin-top: 1rem;
+    padding: 1rem 10%;
+}
+
+// styles for the whole header contact section
+.number-center {
+  display: inline;
+  @media (max-width: $grid-float-breakpoint){
+    display: none;
+  }
+}
+
+.custom-header-menu ul li {
+    float: right;
+}
+
+.socialmedia-header {
+    font-size: 2rem;
+    text-align: right;
+}
+
+.banner .top-header {
+    padding: 10px 3rem;
+}
+
+a.navbar-brand {
+    width: 75%;
+    @media(min-width: 480px) {
+        width: 35%;
+    }
+    @media(min-width: $screen-md) {
+        width: 25%;
+    }
+    @media(min-width: $grid-float-breakpoint) {
+        width: 100%;
+    }
+}
+
+.blvd-responsive-menu ul.nav.navbar-nav {
+    @media(min-width: $grid-float-breakpoint) {
+        background-color: $brand-primary;
+    }
+}
