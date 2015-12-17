@@ -1,0 +1,29 @@
+// applies the pretty_hover mixin to all rIDX pod titles
+a.listing-title h4 {
+    @include pretty_hover(none, $brand-primary, ease 0.35s);
+}
+
+// no borders, please
+.tab-content,
+.banner .top-header,
+ul.nav.nav-tabs,
+.navbar-default,
+.hji-home-value-form.widget,
+.quick-search-widget-wrapper {
+    @include no_borders;
+}
+
+// makes the rIDX listings grid 3/4 width centered on the screen on $screen-xs
+.idx-results {
+    @include mobile_landscape {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+// applies the tab_styling mixin to tabs
+.nav-tabs> li.active> a,
+.nav-tabs> li.active> a:hover,
+.nav-tabs> li.active> a:focus {
+    @include tab_styling;
+}
