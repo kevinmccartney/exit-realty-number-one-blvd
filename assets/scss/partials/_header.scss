@@ -6,6 +6,9 @@
 
 .banner .top-header {
     padding: 10px 3rem;
+    .footer-widgets {
+        margin-bottom: 0;
+    }
 }
 
 // styling for the user sign-in header
@@ -32,7 +35,7 @@
 }
 
 // styling for the menu in the top-header area
-.top-header-widgets .nav-pills {
+.top-header .footer-widgets .nav-pills {
     li.current-menu-item  a {
         background-color: $brand-primary;
         color: $white;
@@ -66,7 +69,7 @@ a.navbar-brand {
         width: 25%;
     }
     @media(min-width: $grid-float-breakpoint) {
-        width: 100%;
+        width: 85%;
     }
 }
 
@@ -108,14 +111,14 @@ a.navbar-brand {
     margin-top: 5rem;
 }
 
-// styles the email text in the header
-// .email_text{
-//     font-size: 13px;
-//     letter-spacing: 1px;
-//     @media (min-width: $grid-float-breakpoint) {
-//         font-size: 15px;
-//     }
-// }
+styles the email text in the header
+.email_text{
+    font-size: 13px;
+    letter-spacing: 1px;
+    @media (min-width: $grid-float-breakpoint) {
+        font-size: 15px;
+    }
+}
 
 // the checklist button
 .btn-header-cta {

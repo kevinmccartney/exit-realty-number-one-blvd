@@ -6,13 +6,11 @@
  * Use this to specify variables that cannot be changed.
  */
 
-////////////////////////////////////////
-//    $mixins/vars/imports    [_mxns_]
-////////////////////////////////////////
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
-// PSA:
-// I know I said imports, but really don't import here
-// unless they are about to cut your arm off.
+$brand-primary:         #009b9c;
+$brand-second:          #c2c2c2;
+$brand-third:           #898989;
 
 // color vars- these can be trimmed at your discretion
 $brand-primary-light-20: lighten($brand-primary, 20%);

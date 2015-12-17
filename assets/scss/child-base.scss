@@ -8,7 +8,9 @@
 /* Import Parent Theme Base */
 @import "../../../hji-boulevard/assets/scss/base";
 
-// @import "partials/fonts";
+
 @import "partials/header";
+@import "partials/global";
+@import "partials/homepage";
 @import "partials/child-variables";
 @import "main-child";
