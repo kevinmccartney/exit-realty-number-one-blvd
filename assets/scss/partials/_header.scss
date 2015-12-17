@@ -1,20 +1,11 @@
-////////////////////////////////////////
-//    $header   [_head_]
-////////////////////////////////////////
-
 .header-widgets.container {
     @media(min-width: $grid-float-breakpoint) {
         width: 98%;
     }
 }
 
-.blvd-responsive-menu ul li {
-    @media(min-width: $grid-float-breakpoint) {
-        border-right: 1px solid $brand-primary-light-20;
-        &:last-child {
-            border-right: none;
-        }
-    }
+.banner .top-header {
+    padding: 10px 3rem;
 }
 
 // styling for the user sign-in header
@@ -22,7 +13,7 @@
     .hji-user-signup {
         // inserts a font awesome icon before the login text
         &:before {
-            color: #fff;
+            color: $white;
             content: "\f084";
             font-family: FontAwesome;
             margin-right: 0 15px 0 0;
@@ -34,6 +25,10 @@
             text-decoration: none;
         }
     }
+}
+
+.custom-header-menu ul li {
+    float: right;
 }
 
 // styling for the menu in the top-header area
@@ -62,6 +57,19 @@
     }
 }
 
+a.navbar-brand {
+    width: 75%;
+    @media(min-width: 480px) {
+        width: 35%;
+    }
+    @media(min-width: $screen-md) {
+        width: 25%;
+    }
+    @media(min-width: $grid-float-breakpoint) {
+        width: 100%;
+    }
+}
+
 // styling for the mobile menu hamburger toggle
 .navbar-default .navbar-toggle {
     border: 0;
@@ -76,59 +84,8 @@
 
 // styling for the number in the header
 .number-custom-contact {
-    margin: 0;
-    @media(min-width: $grid-float-breakpoint) {
-        margin-top: 5rem;
-    }
+    margin-top: 5rem;
 }
-
-// styling for the menu above the $grid-float-breakpoint
-.banner .header-widgets .blvd-responsive-menu {
-    @media (min-width: $grid-float-breakpoint) {
-        padding: 10px 0px;
-        background: $brand-primary;
-        border-radius: 4px;
-    }
-}
-
-// this block sets styles the dropdown items in the main menu
-.blvd-responsive-menu .dropdown-menu > li > a {
-    &:hover,
-    &:active,
-    &:focus {
-        color: $white;
-        background-color: $brand-primary;
-        text-decoration: none;
-        @media(min-width: $grid-float-breakpoint) {
-
-        }
-    }
-}
-
-.blvd-responsive-menu .nav li ul li a,
-.blvd-responsive-menu .nav li a {
-    @media(max-width: $grid-float-breakpoint) {
-        color: $brand-primary !important;
-        &:hover,
-        &:active,
-        &:focus {
-            color: $brand-primary-dark-20 !important;
-        }
-
-    }
-}
-
-// .blvd-responsive-menu .nav li ul li a {
-//     @media(max-width: $grid-float-breakpoint) {
-//         color: $brand-primary;
-//         &:hover,
-//         &:active,
-//         &:focus {
-//             color: $brand-primary-dark-20;
-//         }
-
-//     }
-// }
 
 // styling for the tagline text in the header
 .custom-header-text h2 {
@@ -152,13 +109,13 @@
 }
 
 // styles the email text in the header
-.email_text{
-    font-size: 13px;
-    letter-spacing: 1px;
-    @media (min-width: $grid-float-breakpoint) {
-        font-size: 15px;
-    }
-}
+// .email_text{
+//     font-size: 13px;
+//     letter-spacing: 1px;
+//     @media (min-width: $grid-float-breakpoint) {
+//         font-size: 15px;
+//     }
+// }
 
 // the checklist button
 .btn-header-cta {
@@ -169,42 +126,44 @@
     padding: 1rem 10%;
 }
 
-// styles for the whole header contact section
-.number-center {
-  display: inline;
-  @media (max-width: $grid-float-breakpoint){
-    display: none;
-  }
-}
-
-.custom-header-menu ul li {
-    float: right;
-}
-
-.socialmedia-header {
-    font-size: 2rem;
-    text-align: right;
-}
-
-.banner .top-header {
-    padding: 10px 3rem;
-}
-
-a.navbar-brand {
-    width: 75%;
-    @media(min-width: 480px) {
-        width: 35%;
-    }
-    @media(min-width: $screen-md) {
-        width: 25%;
-    }
+.blvd-responsive-menu ul li {
     @media(min-width: $grid-float-breakpoint) {
-        width: 100%;
+        border-right: 1px solid $brand-primary-light-20;
+        &:last-child {
+            border-right: none;
+        }
     }
 }
 
-.blvd-responsive-menu ul.nav.navbar-nav {
-    @media(min-width: $grid-float-breakpoint) {
+// styling for the menu above the $grid-float-breakpoint
+.banner .header-widgets .blvd-responsive-menu {
+    @media (min-width: $grid-float-breakpoint) {
+        padding: 10px 0px;
+        background: $brand-primary;
+        border-radius: 4px;
+    }
+}
+
+// this block sets styles the dropdown items in the main menu
+.blvd-responsive-menu .dropdown-menu > li > a {
+    &:hover,
+    &:active,
+    &:focus {
+        color: $white !important;
         background-color: $brand-primary;
+        text-decoration: none;
+    }
+}
+
+.blvd-responsive-menu .nav li ul li a,
+.blvd-responsive-menu .nav li a {
+    @media(max-width: $grid-float-breakpoint) {
+        color: $brand-primary !important;
+        &:hover,
+        &:active,
+        &:focus {
+            color: $brand-primary-dark-20 !important;
+        }
+
     }
 }
