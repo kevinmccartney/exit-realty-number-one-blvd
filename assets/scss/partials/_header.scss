@@ -11,10 +11,8 @@
     }
 }
 
-// styling for the user sign-in header
 .user-signup-header {
     .hji-user-signup {
-        // inserts a font awesome icon before the login text
         &:before {
             color: $white;
             content: "\f084";
@@ -72,7 +70,6 @@ a.navbar-brand {
     }
 }
 
-// styling for the mobile menu hamburger toggle
 .navbar-default .navbar-toggle {
     border: 0;
     background-color: $brand-primary;
@@ -84,7 +81,6 @@ a.navbar-brand {
     }
 }
 
-// styling for the tagline text in the header
 .custom-header-text h2 {
     font-size: 2.8em;
     text-align: center;
@@ -95,7 +91,6 @@ a.navbar-brand {
     margin-top: 2rem;
 }
 
-// styles the phone number in the header
 .big_phone {
     color: $black;
     font-size: 4rem;
@@ -103,7 +98,6 @@ a.navbar-brand {
     padding: 10px 0px 0px;
 }
 
-// styles the email text in the header
 a.email_text {
     font-size: 13px;
     letter-spacing: 1px;
@@ -112,9 +106,7 @@ a.email_text {
     }
 }
 
-// the checklist button
 .btn-header-cta {
-    color: #333;
     background-color: #f0f0f0;
     border-color: #c2c2c2;
     margin-top: 1rem;
@@ -130,7 +122,6 @@ a.email_text {
     }
 }
 
-// styling for the menu above the $grid-float-breakpoint
 .banner .header-widgets .blvd-responsive-menu {
     @media (min-width: $grid-float-breakpoint) {
         padding: 10px 0px;
@@ -139,7 +130,6 @@ a.email_text {
     }
 }
 
-// this block sets styles the dropdown items in the main menu
 .blvd-responsive-menu .dropdown-menu > li > a {
     &:hover,
     &:active,

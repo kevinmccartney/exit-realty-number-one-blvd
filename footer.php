@@ -5,24 +5,24 @@
  *
 */
 
-do_action( 'hji_theme_before_footer' ); ?>
+do_action('hji_theme_before_footer'); ?>
 <footer id="footer" class="content-info" role="contentinfo">
   <div class="container">
     <div class="footer-menu-wrapper">
       <?php
-      if ( has_nav_menu( 'footer-menu' ) ) {
-        wp_nav_menu( array( 'theme_location' => 'footer-menu', 'menu_class' => 'nav nav-pills' ) );
+      if (has_nav_menu('footer-menu')) {
+        wp_nav_menu(array('theme_location' => 'footer-menu', 'menu_class' => 'nav nav-pills'));
       }
       ?>
     </div>
-    <?php do_action( 'hji_theme_before_footer_widgets' ); ?>
-    <?php if ( is_active_sidebar( 'blvd-footerwidgets' ) ) : ?>
+    <?php do_action('hji_theme_before_footer_widgets'); ?>
+    <?php if (is_active_sidebar('blvd-footerwidgets')) : ?>
     <div class="footer-widgets row">
-      <?php dynamic_sidebar( 'blvd-footerwidgets' ); ?>
+      <?php dynamic_sidebar('blvd-footerwidgets'); ?>
     </div>
     <?php endif; ?>
-    <?php do_action( 'hji_theme_after_footer_widgets' ); ?>
-    <?php do_action( 'hji_theme_above_copyright' ); ?>
+    <?php do_action('hji_theme_after_footer_widgets'); ?>
+    <?php do_action('hji_theme_above_copyright'); ?>
   </div>
   <div id="copyright" class="fineprint">
     <div class="container">
@@ -32,4 +32,4 @@ do_action( 'hji_theme_before_footer' ); ?>
   </div>
   <?php wp_footer(); ?>
 </footer>
-<?php do_action( 'hji_theme_after_footer' ); ?>
+<?php do_action('hji_theme_after_footer'); ?>

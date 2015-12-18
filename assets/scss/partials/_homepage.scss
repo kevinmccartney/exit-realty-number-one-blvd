@@ -1,3 +1,4 @@
+// resetting fonts on homepage
 .home {
     h1,
     h2,
@@ -27,25 +28,21 @@
     }
 }
 
-/*
- * BEGIN $custom_homepage_widgets
- * These styles govern the custom quicksearch/home valuation widget
- * on the homepage.
-*/
 
-// sets a margin on the whole wrapper
+// BEGIN $custom_homepage_widgets
+// These styles govern the custom quicksearch/home valuation widget
+// on the homepage.
+
 .homepage-custom-widget {
     margin-top: 10rem;
     text-align: center;
 }
 
-// syles for the menu that holds the two buttons above the forms
 .homepage-custom-widget-menu {
     text-align: center;
     display: inline-block;
 }
 
-// the icons above the forms
 .fa-custom-widget {
     font-size: 4.5em;
     display: block;
@@ -82,7 +79,6 @@ li.active .homepage-custom-widget-menu-link {
     opacity: 0.9;
 }
 
-// establishes the title style
 h1.custom-widget-title {
     color: $brand-primary;
     font-size: 3.2em;
@@ -92,24 +88,18 @@ h1.custom-widget-title {
     }
 }
 
-// establishes the color for the wrapper that the form is in
 .custom-widget-content {
     background-color: rgba($black, 0.85);
 }
 
-// padding for the pane that the form is in
 .custom-widget-pane {
     padding: 1rem 2rem;
 }
 
-/*
- * END $custom_homepage_widgets
-*/
+// END $custom_homepage_widgets
 
-/*
- * BEGIN $first_homepage_widgets
- * These styles govern the first widget area on the homepage.
-*/
+// BEGIN $first_homepage_widgets
+// These styles govern the first widget area on the homepage.
 
 .first-widget {
     margin-top: 10rem;
@@ -177,14 +167,10 @@ h1.custom-widget-title {
     }
 }
 
-/*
- * END $first_homepage_widgets
-*/
+// END $first_homepage_widgets
 
-/*
- * BEGIN $second_homepage_widgets
- * These styles govern the second widget area on the homepage.
-*/
+// BEGIN $second_homepage_widgets
+// These styles govern the second widget area on the homepage.
 
 .second-widget {
     background: $brand-primary;
@@ -239,14 +225,10 @@ h1.custom-widget-title {
     letter-spacing: 2px;
 }
 
-/*
- * END $second_homepage_widgets
-*/
+// END $second_homepage_widgets
 
-/*
- * BEGIN $third_homepage_widgets
- * These styles govern the third widget area on the homepage.
-*/
+// BEGIN $third_homepage_widgets
+// These styles govern the third widget area on the homepage.
 
 .third-widget {
     padding: 4rem 0;
@@ -265,7 +247,7 @@ h1.affiliations-title {
     justify-content: center;
     min-height: 275px;
     @media (min-width: 992px) {
-        border-right: 1px solid #cccccc;
+        border-right: 1px solid $brand-primary-light-20;
         &:last-child {
             border-right: none;
         }
