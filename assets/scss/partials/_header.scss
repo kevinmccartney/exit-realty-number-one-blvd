@@ -14,12 +14,12 @@
 .user-signup-header {
     .hji-user-signup {
         &:before {
-            color: $white;
             content: "\f084";
-            font-family: FontAwesome;
+            margin-right: 0.75rem;
             padding: 5px;
             background-color: darken($brand-primary, 5%);
-            margin-right: 0.75rem;
+            color: $white;
+            font-family: FontAwesome;
         }
         &:hover {
             text-decoration: none;
@@ -34,25 +34,25 @@
 // styling for the menu in the top-header area
 .top-header .footer-widgets .nav-pills {
     li.current-menu-item a {
-        background-color: $brand-primary;
         color: $white;
+        background-color: $brand-primary;
         &:focus,
         &:hover,
         &:active {
-            background-color: $brand-primary;
             color: $white;
+            background-color: $brand-primary;
         }
     }
     li a {
+        padding: 5px 10px;
         font-family: $navbar-font-family;
         font-size: 1rem;
         text-transform: uppercase;
-        padding: 5px 10px;
         &:hover,
         &:focus,
         &:active {
-            background-color: $brand-primary;
             color: $white;
+            background-color: $brand-primary;
         }
     }
 }
@@ -82,9 +82,9 @@ a.navbar-brand {
 }
 
 .custom-header-text h2 {
+    margin-top: 6rem;
     font-size: 2.8em;
     text-align: center;
-    margin-top: 6rem;
 }
 
 .header-custom-contact {
@@ -92,10 +92,10 @@ a.navbar-brand {
 }
 
 .big_phone {
+    padding: 10px 0px 0px;
     color: $black;
     font-size: 4rem;
     line-height: 1em;
-    padding: 10px 0px 0px;
 }
 
 a.email_text {
@@ -107,10 +107,10 @@ a.email_text {
 }
 
 .btn-header-cta {
-    background-color: #f0f0f0;
     border-color: #c2c2c2;
     margin-top: 1rem;
     padding: 1rem 10%;
+    background-color: #f0f0f0;
 }
 
 .blvd-responsive-menu ul li {
@@ -125,8 +125,8 @@ a.email_text {
 .banner .header-widgets .blvd-responsive-menu {
     @media (min-width: $grid-float-breakpoint) {
         padding: 10px 0px;
-        background: $brand-primary;
         border-radius: 4px;
+        background: $brand-primary;
     }
 }
 

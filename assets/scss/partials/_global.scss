@@ -18,8 +18,8 @@ ul.nav.nav-tabs,
 // makes the rIDX listings grid 3/4 width centered on the screen on $screen-xs
 .idx-results {
     @include mobile_landscape {
-        width: 75%;
         margin: auto;
+        width: 75%;
     }
 }
 

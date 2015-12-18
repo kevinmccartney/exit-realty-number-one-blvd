@@ -1,4 +1,4 @@
-// resetting fonts on homepage
+/* resetting fonts on homepage */
 .home {
     h1,
     h2,
@@ -17,8 +17,8 @@
 }
 
 .home .quick-search-widget-wrapper {
-    background-color: transparent;
     border: 0;
+    background-color: transparent;
 }
 
 .first-widget {
@@ -28,10 +28,11 @@
     }
 }
 
-
-// BEGIN $custom_homepage_widgets
-// These styles govern the custom quicksearch/home valuation widget
-// on the homepage.
+/**
+ * BEGIN $custom_homepage_widgets
+ * These styles govern the custom quicksearch/home valuation widget
+ * on the homepage.
+ */
 
 .homepage-custom-widget {
     margin-top: 10rem;
@@ -39,28 +40,28 @@
 }
 
 .homepage-custom-widget-menu {
-    text-align: center;
     display: inline-block;
+    text-align: center;
 }
 
 .fa-custom-widget {
+    display: inline-block;
     font-size: 4.5em;
-    display: block;
     @media (min-width: $screen-lg) {
         font-size: 5.5em;
     }
 }
 
-// styling for the menu item links
+/* styling for the menu item links */
 .homepage-custom-widget-menu-link {
-    color: $white;
     width: 150px;
+    opacity: 0.8;
+    background-color: $brand-third;
+    color: $white;
+    font-family: $navbar-font-family;
     font-size: 13px;
     font-weight: bold;
-    font-family: $navbar-font-family;
     text-transform: uppercase;
-    background: $brand-third;
-    opacity: 0.8;
     letter-spacing: 1px;
     text-align: center;
     @media (max-width: 1199px) {
@@ -75,8 +76,8 @@
 }
 
 li.active .homepage-custom-widget-menu-link {
-    background-color: $brand-primary;
     opacity: 0.9;
+    background-color: $brand-primary;
 }
 
 h1.custom-widget-title {
@@ -96,10 +97,12 @@ h1.custom-widget-title {
     padding: 1rem 2rem;
 }
 
-// END $custom_homepage_widgets
+/* END $custom_homepage_widgets */
 
-// BEGIN $first_homepage_widgets
-// These styles govern the first widget area on the homepage.
+/**
+ * BEGIN $first_homepage_widgets
+ * These styles govern the first widget area on the homepage.
+ */
 
 .first-widget {
     margin-top: 10rem;
@@ -107,8 +110,8 @@ h1.custom-widget-title {
 }
 
 .our-services-title {
-    font-size: 3.5em;
     margin-bottom: 20px;
+    font-size: 3.5em;
 }
 
 .service-cta-photo-wrapper {
@@ -125,8 +128,18 @@ h1.custom-widget-title {
 }
 
 .service-cta-textbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 2rem;
     @media (min-width: $screen-sm) {
@@ -159,18 +172,20 @@ h1.custom-widget-title {
         margin-top: 5rem;
     }
     .idx-results-wrapper {
-        width: 75%;
         margin: auto;
+        width: 75%;
         @media (min-width: $screen-md) {
             width: initial;
         }
     }
 }
 
-// END $first_homepage_widgets
+/* END $first_homepage_widgets */
 
-// BEGIN $second_homepage_widgets
-// These styles govern the second widget area on the homepage.
+/**
+ * BEGIN $second_homepage_widgets
+ * These styles govern the second widget area on the homepage.
+*/
 
 .second-widget {
     background: $brand-primary;
@@ -186,23 +201,23 @@ h1.custom-widget-title {
 }
 
 .widget_recent_entries {
-    background: $black;
     padding: 2rem;
+    background: $black;
     h2 {
         color: $white;
     }
     ul {
         padding-left: 0;
         li {
-            border-bottom: 1px dashed #fff;
             padding: 1rem 10px;
+            border-bottom: 1px dashed #fff;
             a {
                 color: $white;
                 &:before {
                     content: "\f178";
-                    font-family: FontAwesome;
                     display: inline-block;
                     padding-right: 1em;
+                    font-family: FontAwesome;
                 }
             }
         }
@@ -213,39 +228,51 @@ h1.custom-widget-title {
 }
 
 .about-us-title {
-    font-size: 3.5em;
-    color: $white;
     margin-bottom: 10px;
+    color: $white;
+    font-size: 3.5em;
 }
 
 .about-us-subtitle {
-    font-family: $navbar-font-family;
-    text-transform: uppercase;
     color: $white;
+    font-family: $navbar-font-family;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-// END $second_homepage_widgets
+/* END $second_homepage_widgets */
 
-// BEGIN $third_homepage_widgets
-// These styles govern the third widget area on the homepage.
+/**
+ * BEGIN $third_homepage_widgets
+ * These styles govern the third widget area on the homepage.
+ */
 
 .third-widget {
     padding: 4rem 0;
 }
 
 h1.affiliations-title {
-    text-align: center;
-    font-size: 5rem;
     margin-bottom: 1rem;
+    font-size: 5rem;
+    text-align: center;
 }
 
 .clients-logo {
-    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     min-height: 275px;
+    text-align: center;
     @media (min-width: 992px) {
         border-right: 1px solid $brand-primary-light-20;
         &:last-child {
