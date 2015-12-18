@@ -1,41 +1,20 @@
 /**
  * Child Theme Variables
- * Use this file to override any variables that are set in the compiler
- * Becuase the compiler uses the !default attribute for all variable declarations
- *
- * Use this to specify variables that cannot be changed.
+ * Use this file to override variables in the parent theme
  */
-
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 $brand-primary:         #009b9c;
 $brand-second:          #c2c2c2;
 $brand-third:           #898989;
 
-// color vars- these can be trimmed at your discretion
 $brand-primary-light-20: lighten($brand-primary, 20%);
-// $brand-primary-light-30: lighten($brand-primary, 30%);
-// $brand-primary-light-40: lighten($brand-primary, 40%);
-// $brand-primary-light-50: lighten($brand-primary, 50%);
 
 $brand-primary-dark-20: darken($brand-primary, 20%);
 $brand-primary-dark-30: darken($brand-primary, 30%);
-// $brand-primary-dark-40: darken($brand-primary, 40%);
-// $brand-primary-dark-50: darken($brand-primary, 50%);
+
 
 $white: #fff;
 $black: #000;
-// $grey: #808080;
-
-// $grey-light-20: lighten($grey, 20%);
-// $grey-light-30: lighten($grey, 30%);
-// $grey-light-40: lighten($grey, 40%);
-// $grey-light-50: lighten($grey, 50%);
-
-// $grey-dark-20: darken($grey, 20%);
-// $grey-dark-30: darken($grey, 30%);
-// $grey-dark-40: darken($grey, 40%);
-// $grey-dark-50: darken($grey, 50%);
 
 // a mixin for a custom hover effect. Can set several properties related to link hover behavior.
 // uncomment the commented lines for even more functionality.
@@ -54,23 +33,17 @@ $black: #000;
     }
 }
 
-// for the sake of brevity? I like mixins....
 @mixin no_borders {
     border: 0;
 }
 
-// this mixin styles the active tabs in Geofarms, etc.
 @mixin tab_styling {
     @include no_borders;
     background-color: $brand-primary;
     text-shadow: $brand-primary-dark-20 2px 2px 4px;
-    color: #fff;
+    color: $white;
 }
 
-// So in Bootstrap 4, there will be a $screen-xs AND $screen-xxs, so $screen-xs will
-// take over the functionality of this mixin
-// https://github.com/twbs/bootstrap/issues/14504
-// Until then, I made this.
 @mixin mobile_landscape {
     $mobile_landscape_min: 480px;
     $mobile_landscape_max: 767px;

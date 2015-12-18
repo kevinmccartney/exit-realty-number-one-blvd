@@ -8,8 +8,13 @@
 /* Import Parent Theme Base */
 @import "../../../hji-boulevard/assets/scss/base";
 
+/* Importing Dancing Script */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+/* Importing Child Variables */
 @import "/child-variables";
 
+/* Importing Child Partials */
 @import "partials/footer";
 @import "partials/header";
 @import "partials/homepage";
