@@ -1,7 +1,17 @@
-.first-widget {
-    margin-top: 5rem;
-    @media(min-width: $screen-md) {
-        margin-top: 16rem;
+.home {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Dancing Script', cursive;
+    }
+    .clients-logo h3,
+    .about-us-subtitle,
+    a.listing-title h4,
+    .custom-homepage-cta-subtitles {
+        font-family: Montserrat;
     }
 }
 
@@ -10,78 +20,10 @@
     border: 0;
 }
 
-.clients-logo h3 {
+.first-widget {
+    margin-top: 5rem;
     @media(min-width: $screen-md) {
-        font-size: 2rem;
-    }
-}
-
-.home .widget_promoted_listings_widget {
-    text-align: center;
-    @media(min-width: $screen-md) {
-        text-align: initial;
-    }
-    @media(max-width: $screen-sm) {
-        margin-top: 4rem !important;
-    }
-    @media(min-width: 480px) and (max-width: $screen-md) {
-        margin-top: 5rem;
-    }
-    .idx-results-wrapper {
-        width: 75%;
-        margin: auto;
-        @media(min-width: $screen-md) {
-            width: initial;
-        }
-    }
-}
-
-.home {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: 'Dancing Script', cursive /*!important*/;
-    }
-}
-
-.clients-logo h3,
-.about-us-subtitle,
-a.listing-title h4,
-h3.custom-homepage-cta-subtitles {
-    font-family: Montserrat;
-}
-
-.custom-header-text h2 {
-    font-family: 'Dancing Script', cursive !important;
-}
-
-.service-cta-textbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-    @media(min-width: $screen-sm) {
-        margin-bottom: 0;
-        min-height: 300px;
-    }
-    @media(min-width: $screen-lg) {
-        min-height: 250px;
-    }
-}
-
-.service-cta-photo-wrapper {
-    text-align: center;
-}
-
-.service-cta-photo {
-    width: 75%;
-    margin: auto;
-    @media(min-width: $screen-sm) {
-        width: auto;
-        margin: auto;
+        margin-top: 16rem;
     }
 }
 
@@ -97,49 +39,49 @@ h3.custom-homepage-cta-subtitles {
     text-align: center;
 }
 
-// the icons above the forms
-.fa-custom-widget {
-    font-size: 5.5em;
-    display: block;
-    @media (max-width: 1199px){
-      font-size: 4.5em;
-    }
-}
-
 // syles for the menu that holds the two buttons above the forms
 .homepage-custom-widget-menu {
     text-align: center;
     display: inline-block;
 }
 
-// styling for the menu items
-.homepage-custom-menu {
-    li.active a {
-        &:focus,
-        &:active,
-        &:hover {
-            font-family:$navbar-font-family;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            background: #000;
-            opacity: 0.8;
-            border: 0px;
-            color: $brand-primary;
-            text-align: center;
-            margin: 0 auto;
-        }
+// the icons above the forms
+.fa-custom-widget {
+    font-size: 4.5em;
+    display: block;
+    @media (min-width: $screen-lg){
+      font-size: 5.5em;
     }
-    @media (min-width: 992px) {
-      border-bottom-width: 0;
-      display: block;
-      float: left;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      position: relative;
-      right: 50%;
-  }
 }
+
+// // styling for the menu items
+// .homepage-custom-menu {
+//     li.active a {
+//         &:focus,
+//         &:active,
+//         &:hover {
+//             font-family:$navbar-font-family;
+//             text-transform: uppercase;
+//             letter-spacing: 1px;
+//             background: #000;
+//             opacity: 0.8;
+//             border: 0px;
+//             color: $brand-primary;
+//             text-align: center;
+//             margin: 0 auto;
+//         }
+//     }
+//     @media (min-width: 992px) {
+//       border-bottom-width: 0;
+//       display: block;
+//       float: left;
+//       list-style: none;
+//       margin: 0;
+//       padding: 0;
+//       position: relative;
+//       right: 50%;
+//   }
+// }
 
 // styling for the menu item links
 .homepage-custom-widget-menu-link {
@@ -148,12 +90,8 @@ h3.custom-homepage-cta-subtitles {
   font-weight: bold;
   font-family:$navbar-font-family;
   text-transform: uppercase;
-  background: $brand-third;
+  // background: $brand-third;
   opacity: 0.9;
-  border: 0px;
-  color: $brand-second;
-  text-align: center;
-  margin: 0 auto;
   @media (max-width: 1199px) {
     width: 120px;
     font-size: 11px;
@@ -196,6 +134,33 @@ h1.custom-widget-title {
   padding: 4rem 0px;
 }
 
+.service-cta-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    @media(min-width: $screen-sm) {
+        margin-bottom: 0;
+        min-height: 300px;
+    }
+    @media(min-width: $screen-lg) {
+        min-height: 250px;
+    }
+}
+
+.service-cta-photo-wrapper {
+    text-align: center;
+}
+
+.service-cta-photo {
+    width: 75%;
+    margin: auto;
+    @media(min-width: $screen-sm) {
+        width: auto;
+        margin: auto;
+    }
+}
+
 .custom-homepage-cta-subtitles {
     font-family:$navbar-font-family;
     text-transform: uppercase;
@@ -210,6 +175,19 @@ h1.custom-widget-title {
 
 .homepage-video-pod {
     margin-bottom: 5%;
+}
+
+.home .widget_promoted_listings_widget {
+    @media(min-width: 480px) and (max-width: $screen-md) {
+        margin-top: 5rem;
+    }
+    .idx-results-wrapper {
+        width: 75%;
+        margin: auto;
+        @media(min-width: $screen-md) {
+            width: initial;
+        }
+    }
 }
 
 /*
@@ -355,4 +333,8 @@ a.service-link {
     @media (max-width: $screen-md) {
         margin: initial;
     }
+}
+
+.clients-logo h3 {
+    font-size: 2rem;
 }
