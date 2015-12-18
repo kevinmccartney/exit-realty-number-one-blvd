@@ -46,6 +46,7 @@
 
 .fa-custom-widget {
     font-size: 4.5em;
+    display: block;
     @media (min-width: $screen-lg) {
         font-size: 5.5em;
     }
