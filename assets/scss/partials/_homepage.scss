@@ -247,7 +247,9 @@ h1.custom-widget-title {
  */
 
 .third-widget {
-    padding: 4rem 0;
+    @media(min-width: $screen-md) {
+        padding: 4rem 0;
+    }
 }
 
 h1.affiliations-title {
@@ -273,7 +275,7 @@ h1.affiliations-title {
     min-height: 275px;
     text-align: center;
     @media (min-width: 992px) {
-        border-right: 1px solid $brand-primary-light-20;
+        border-right: 1px solid $brand-second;
         &:last-child {
             border-right: none;
         }
