@@ -64,7 +64,7 @@
             <div class="second-widget">
                 <div class="row">
                     <?php dynamic_sidebar('hjitw-home-second-widgets'); ?>
-                </div
+                </div>
             </div>
             <?php endif; ?>
             <?php if (is_active_sidebar('hjitw-home-third-widgets')) : ?>
