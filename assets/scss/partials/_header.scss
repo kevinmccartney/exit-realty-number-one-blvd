@@ -1,5 +1,5 @@
 .header-widgets.container {
-    @media(min-width: $grid-float-breakpoint) {
+    @media (min-width: $grid-float-breakpoint) {
         width: 98%;
     }
 }
@@ -19,7 +19,6 @@
             color: $white;
             content: "\f084";
             font-family: FontAwesome;
-            margin-right: 0 15px 0 0;
             padding: 5px;
             background-color: darken($brand-primary, 5%);
             margin-right: 0.75rem;
@@ -36,7 +35,7 @@
 
 // styling for the menu in the top-header area
 .top-header .footer-widgets .nav-pills {
-    li.current-menu-item  a {
+    li.current-menu-item a {
         background-color: $brand-primary;
         color: $white;
         &:focus,
@@ -62,13 +61,13 @@
 
 a.navbar-brand {
     width: 75%;
-    @media(min-width: 480px) {
+    @media (min-width: 480px) {
         width: 35%;
     }
-    @media(min-width: $screen-md) {
+    @media (min-width: $screen-md) {
         width: 25%;
     }
-    @media(min-width: $grid-float-breakpoint) {
+    @media (min-width: $grid-float-breakpoint) {
         width: 85%;
     }
 }
@@ -81,38 +80,31 @@ a.navbar-brand {
     &:focus,
     &:active {
         border: 0;
-        background-color: $brand-primary-light-20;
+        background-color: $brand-primary-light-10;
     }
-}
-
-// styling for the number in the header
-.number-custom-contact {
-    margin-top: 5rem;
 }
 
 // styling for the tagline text in the header
 .custom-header-text h2 {
     font-size: 2.8em;
     text-align: center;
-    line-height: 1.1em;
-    margin-top: 10rem;
+    margin-top: 6rem;
+}
+
+.header-custom-contact {
+    margin-top: 2rem;
 }
 
 // styles the phone number in the header
 .big_phone {
-  color: $black;
-  font-size: 4rem;
-  line-height: 1em;
-  padding: 10px 0px 0px;
-
-}
-
-.header-custom-contact {
-    margin-top: 5rem;
+    color: $black;
+    font-size: 4rem;
+    line-height: 1em;
+    padding: 10px 0px 0px;
 }
 
 // styles the email text in the header
-.email_text {
+a.email_text {
     font-size: 13px;
     letter-spacing: 1px;
     @media (min-width: $grid-float-breakpoint) {
@@ -130,7 +122,7 @@ a.navbar-brand {
 }
 
 .blvd-responsive-menu ul li {
-    @media(min-width: $grid-float-breakpoint) {
+    @media (min-width: $grid-float-breakpoint) {
         border-right: 1px solid $brand-primary-light-20;
         &:last-child {
             border-right: none;
@@ -160,13 +152,12 @@ a.navbar-brand {
 
 .blvd-responsive-menu .nav li ul li a,
 .blvd-responsive-menu .nav li a {
-    @media(max-width: $grid-float-breakpoint) {
+    @media (max-width: $grid-float-breakpoint) {
         color: $brand-primary !important;
         &:hover,
         &:active,
         &:focus {
             color: $brand-primary-dark-20 !important;
         }
-
     }
 }

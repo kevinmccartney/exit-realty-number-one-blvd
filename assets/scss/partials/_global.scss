@@ -1,6 +1,8 @@
-// applies the pretty_hover mixin to all rIDX pod titles
-a.listing-title h4 {
+a.listing-title {
     @include pretty_hover(none, $brand-primary, ease 0.35s);
+    h4 {
+        @include pretty_hover(none, $brand-primary, ease 0.35s);
+    }
 }
 
 // no borders, please
@@ -22,8 +24,8 @@ ul.nav.nav-tabs,
 }
 
 // applies the tab_styling mixin to tabs
-.nav-tabs> li.active> a,
-.nav-tabs> li.active> a:hover,
-.nav-tabs> li.active> a:focus {
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
     @include tab_styling;
 }
