@@ -1,81 +1,45 @@
-#footer{
-  margin: 0 auto;
-  text-align: center;
-  .line {
-      border-bottom: 1px solid #fff;
-      display: block;
-      padding: 0px 0px 20px;
-      margin-bottom: 20px;
-  }
-}
-
-// a bottom margin for the footer widgets so they don't sit right on top of the copyright
-.footer-widgets.row {
-  margin-bottom: 2rem;
+#footer {
+    text-align: center;
 }
 
 #footer .nav-pills > li.active > a,
 #footer .nav-pills > li.active > a:focus,
 #footer .nav-pills > li.active > a:hover {
-    background-color: white;
-    color: $brand-primary;
-}
-
-// creates the box around the social icons in the footer
-.socialmedia-footer {
-  .fa:before {
-    display: block;
-    font-size: 30px;
-    line-height: 40px;
-    border: 2px solid #fff;
-    width: 50px;
-    height: 50px;
-    transition: all 0.2s ease-in-out 0s;
-    margin: 10px 10px 10px 10px;
-    color: #fff;
-
-  }
-
+    background-color: $brand-primary;
+    color: $white;
 }
 
 .footer-menu-wrapper {
     .nav {
-        margin: 0 auto;
-        display: table;
-        table-layout: fixed;
+        display: inline-block;
         li a {
-            // color: $brand-primary;
-          padding: 5px 8px;
-          // font-weight: 400;
-          font-family: $navbar-font-family;
-          // font-size: 13px;
-          text-transform: uppercase;
-          &:hover,
-          &:focus,
-          &:active {
-            background-color: $brand-primary;
-            color: $white;
-          }
+            padding: 5px 8px;
+            font-family: $navbar-font-family;
+            text-transform: uppercase;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $brand-primary;
+                color: $white;
+            }
         }
     }
 }
 
-ul#menu-sub-menu-1 {
-    display: inline-block;
-}
-
-
-
-#copyright{
-    margin-top: 30px;
-}
-
-.first-widget-lower .embed-responsive.embed-responsive-16by9 {
-    margin-bottom: 3rem;
-}
-
-.widget_recent_entries {
-    @media(max-width: $screen-md) {
-        margin: initial;
+.socialmedia-footer {
+    .fa:before {
+        display: block;
+        font-size: 30px;
+        line-height: 45px;
+        border: 2px solid $white;
+        width: 50px;
+        height: 50px;
+        transition: all 0.2s ease-in-out 0s;
+        margin: 10px;
+        color: $white;
     }
+}
+
+#copyright {
+    margin-top: 30px;
 }

@@ -1,4 +1,11 @@
-<?php do_action( 'hji_theme_before_footer' ); ?>
+<?php
+
+/*
+ * Allows us to pull in the footer menu into the footer automatically.
+ *
+*/
+
+do_action( 'hji_theme_before_footer' ); ?>
 <footer id="footer" class="content-info" role="contentinfo">
   <div class="container">
     <div class="footer-menu-wrapper">

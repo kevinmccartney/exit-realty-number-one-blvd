@@ -346,3 +346,13 @@ a.service-link {
     justify-content: center;
     min-height: 275px;
 }
+
+.first-widget-lower .embed-responsive.embed-responsive-16by9 {
+    margin-bottom: 3rem;
+}
+
+.widget_recent_entries {
+    @media (max-width: $screen-md) {
+        margin: initial;
+    }
+}

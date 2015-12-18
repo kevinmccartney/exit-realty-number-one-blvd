@@ -111,8 +111,8 @@ a.navbar-brand {
     margin-top: 5rem;
 }
 
-styles the email text in the header
-.email_text{
+// styles the email text in the header
+.email_text {
     font-size: 13px;
     letter-spacing: 1px;
     @media (min-width: $grid-float-breakpoint) {
