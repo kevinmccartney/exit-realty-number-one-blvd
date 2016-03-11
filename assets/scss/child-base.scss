@@ -15,8 +15,8 @@
 @import "/child-variables";
 
 /* Importing Child Partials */
+@import "partials/child-globals";
+@import "partials/content";
 @import "partials/footer";
 @import "partials/header";
 @import "partials/homepage";
-@import "partials/global";
-@import "partials/interior";

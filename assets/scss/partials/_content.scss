@@ -30,3 +30,17 @@ p.parter-company {
         margin: auto;
     }
 }
+
+.post-type-archive .agent-data {
+    height: 165px;
+}
+
+.partner-img-wrapper img {
+    @media(max-width: $screen-xs) {
+        max-height: 350px;
+    }
+}
+
+.partner-pod {
+    text-align: center;
+}

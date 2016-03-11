@@ -29,3 +29,22 @@ ul.nav.nav-tabs,
 .nav-tabs > li.active > a:focus {
     @include tab_styling;
 }
+
+.rel-listing-wrap .btn-wrapper > div, 
+.idx-results .idx-result-snippet .btn-wrapper > div {
+    @media(min-width: $screen-sm) and (max-width: $screen-lg) {
+        margin: 6px 5%;
+    }
+}
+
+//
+// not sure if these belong
+// --------------------------------------------------
+
+// .grid-item {
+//     width: calc(50% - 20px);
+//     @media(min-width: $screen-md) {
+//         width: calc(33.333% - 20px);
+//         margin-bottom: 20px;
+//     }
+// }

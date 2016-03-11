@@ -6,9 +6,6 @@
 
 .banner .top-header {
     padding: 10px 3rem;
-    .footer-widgets {
-        margin-bottom: 0;
-    }
 }
 
 .user-signup-header {
@@ -21,8 +18,10 @@
             color: $white;
             font-family: FontAwesome;
         }
+        
         &:hover {
             text-decoration: none;
+            color: $brand-primary;
         }
     }
 }
@@ -32,7 +31,7 @@
 }
 
 // styling for the menu in the top-header area
-.top-header .footer-widgets .nav-pills {
+.top-header .nav-pills {
     li.current-menu-item a {
         color: $white;
         background-color: $brand-primary;
@@ -73,6 +72,7 @@ a.navbar-brand {
 .navbar-default .navbar-toggle {
     border: 0;
     background-color: $brand-primary;
+    
     &:hover,
     &:focus,
     &:active {
@@ -83,6 +83,7 @@ a.navbar-brand {
 
 .custom-header-text h2 {
     margin-top: 6rem;
+    font-family: 'Dancing Script', cursive;
     font-size: 2.8em;
     text-align: center;
 }
@@ -111,14 +112,12 @@ a.email_text {
     margin-top: 1rem;
     padding: 1rem 10%;
     background-color: #f0f0f0;
+    transition: ease 0.3s;
 }
 
-.blvd-responsive-menu ul li {
+.blvd-responsive-menu nav > ul > li {
     @media (min-width: $grid-float-breakpoint) {
         border-right: 1px solid $brand-primary-light-20;
-        &:last-child {
-            border-right: none;
-        }
     }
 }
 
@@ -131,12 +130,14 @@ a.email_text {
 }
 
 .blvd-responsive-menu .dropdown-menu > li > a {
-    &:hover,
-    &:active,
-    &:focus {
-        color: $white !important;
-        background-color: $brand-primary;
-        text-decoration: none;
+    @media(min-width: $grid-float-breakpoint) {
+        &:hover,
+        &:active,
+        &:focus {
+            color: $white !important;
+            background-color: $brand-primary;
+            text-decoration: none;
+        }
     }
 }
 

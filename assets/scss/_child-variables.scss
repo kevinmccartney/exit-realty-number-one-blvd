@@ -7,6 +7,7 @@ $brand-primary: #009b9c;
 $brand-second: #c2c2c2;
 $brand-third: #898989;
 
+$brand-primary-light-10: lighten($brand-primary, 10%);
 $brand-primary-light-20: lighten($brand-primary, 20%);
 
 $brand-primary-dark-20: darken($brand-primary, 20%);

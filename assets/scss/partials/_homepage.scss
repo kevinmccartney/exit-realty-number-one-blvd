@@ -12,19 +12,19 @@
     .about-us-subtitle,
     a.listing-title h4,
     h3.service-cta-title {
-        font-family: Montserrat;
+        font-family: Montserrat, 'Arial', 'Helvetica', 'Sans Serif';
     }
 }
 
 .home .quick-search-widget-wrapper {
-    border: 0;
     background-color: transparent;
 }
 
 .first-widget {
-    margin-top: 5rem;
-    @media (min-width: $screen-md) {
-        margin-top: 16rem;
+    margin-top: 15rem;
+    padding: 4rem 0px;
+    @media(min-width: $screen-md) and (max-width: $screen-lg) {
+        margin-top: 25rem;
     }
 }
 
@@ -56,6 +56,7 @@
 .homepage-custom-widget-menu-link {
     width: 150px;
     opacity: 0.8;
+    border: 0 !important;
     background-color: $brand-third;
     color: $white;
     font-family: $navbar-font-family;
@@ -107,6 +108,9 @@ h1.custom-widget-title {
 .first-widget {
     margin-top: 10rem;
     padding: 4rem 0px;
+    @media(min-width: $screen-md) and (max-width: $screen-lg) {
+        margin-top: 25rem;
+    }
 }
 
 .our-services-title {
@@ -210,7 +214,7 @@ h1.custom-widget-title {
         padding-left: 0;
         li {
             padding: 1rem 10px;
-            border-bottom: 1px dashed #fff;
+            border-bottom: 1px dashed $white;
             a {
                 color: $white;
                 &:before {
@@ -275,11 +279,19 @@ h1.affiliations-title {
     justify-content: center;
     min-height: 275px;
     text-align: center;
+    
     @media (min-width: 992px) {
         border-right: 1px solid $brand-second;
         &:last-child {
             border-right: none;
         }
+    }
+}
+
+.clients-logo img {
+    height: 125px;
+    @media(min-width: $screen-lg) {
+        height: 150px;
     }
 }
 
