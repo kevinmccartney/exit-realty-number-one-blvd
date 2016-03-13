@@ -9,8 +9,8 @@ if (!defined('HJI_BLVD_SCSS')) {
     define('HJI_BLVD_SCSS', true);
 }
 
-if (!function_exists('hji_number_one_widgets')) {
-    function hji_number_one_widgets() {
+if (!function_exists('hji_exit_number_one_widgets')) {
+    function hji_exit_number_one_widgets() {
         register_sidebar( array(
             'id'            => 'hjitw-home-first-widgets',
             'name'          => __( 'Home Page First Widget', 'hji_themework' ),
