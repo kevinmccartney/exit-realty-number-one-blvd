@@ -50,5 +50,5 @@ if ( !function_exists( 'hji_exit_number_one_load_fonts' ) ) {
     function hji_exit_number_one_load_fonts() {
         wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Dancing+Script' );
     }
-    add_action( 'wp_enqueue_scripts', 'hji_number_one_load_fonts' );
+    add_action( 'wp_enqueue_scripts', 'hji_exit_number_one_load_fonts' );
 }
