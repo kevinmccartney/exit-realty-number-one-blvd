@@ -19,12 +19,12 @@
                     <?php do_action('hji_theme_before_content'); ?>
                     <div id="content" class="<?php echo hji_theme_main_class(); ?>" role="main">
                         <?php if ( is_page_template('template-homepage.php') ) {
-                        include_once('template-homepage.php');
+                            include_once('template-homepage.php');
                         } else {
-                        do_action('hji_theme_before_content_col');
-                        include hji_theme_template_path();
-                        do_action('hji_theme_after_content_col');
-                        get_template_part('templates/cta-boxes');
+                            do_action('hji_theme_before_content_col');
+                            include hji_theme_template_path();
+                            do_action('hji_theme_after_content_col');
+                            get_template_part('templates/cta-boxes');
                         }
                         ?>
                     </div>
@@ -35,37 +35,21 @@
                 <?php do_action('hji_theme_layout_after'); ?>
             </section>
             <?php do_action('hji_theme_after_primary'); ?>
-            <?php if ( is_active_sidebar('blvd-homewidgets') || is_active_sidebar('blvd-hometabwidgets')) : ?>
-                <section class="container">
-                    <?php if (is_active_sidebar('blvd-homewidgets')) : ?>
-                    <div class="blvd-home-widgets row">
-                        <?php dynamic_sidebar('blvd-homewidgets'); ?>
-                    </div>
-                    <?php endif; ?>
-                    <?php if (is_active_sidebar('blvd-hometabwidgets')) : ?>
-                    <div class="blvd-tabwrap">
-                    <ul class="nav nav-tabs"></ul>
-                    <div class="blvd-tabs-container tab-content">
-                        <?php dynamic_sidebar('blvd-hometabwidgets'); ?>
-                    </div>
-                    <?php endif; ?>
-                </section>
-            <?php endif; ?>
             <?php if (is_active_sidebar('hjitw-home-first-widgets')) : ?>
-            <div class="first-widget">
-                <section class="container">
-                    <div class="row">
-                        <?php dynamic_sidebar('hjitw-home-first-widgets'); ?>
-                    </div>
-                </section>
-            </div>
+                <div class="first-widget">
+                    <section class="container">
+                        <div class="row">
+                            <?php dynamic_sidebar('hjitw-home-first-widgets'); ?>
+                        </div>
+                    </section>
+                </div>
             <?php endif; ?>
             <?php if (is_active_sidebar('hjitw-home-second-widgets')) : ?>
-            <div class="second-widget">
-                <div class="row">
-                    <?php dynamic_sidebar('hjitw-home-second-widgets'); ?>
+                <div class="second-widget">
+                    <div class="row">
+                        <?php dynamic_sidebar('hjitw-home-second-widgets'); ?>
+                    </div>
                 </div>
-            </div>
             <?php endif; ?>
             <?php if (is_active_sidebar('hjitw-home-third-widgets')) : ?>
                 <div class="third-widget">
