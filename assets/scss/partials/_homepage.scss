@@ -16,6 +16,10 @@
     }
 }
 
+.blvd-slideshow {
+    box-shadow: $brand-third 0px 10px 20px;
+}
+
 .home .quick-search-widget-wrapper {
     background-color: transparent;
 }
@@ -97,6 +101,14 @@ h1.custom-widget-title {
     padding: 1rem 2rem;
 }
 
+// so the "Our Services" text doesn't run into the slideshow
+div#sale {
+    margin-bottom: 10rem;
+    @media(min-width: $screen-md) {
+        margin-bottom: 5rem;
+    }
+}
+
 /* END $custom_homepage_widgets */
 
 /**
@@ -105,7 +117,7 @@ h1.custom-widget-title {
  */
 
 .first-widget {
-    margin-top: 20rem;
+    margin-top: 25rem;
     padding: 4rem 0px;
     @media(min-width: $screen-md) {
         margin-top: 30rem;
