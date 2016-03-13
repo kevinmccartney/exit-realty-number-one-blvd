@@ -9,7 +9,7 @@ if (!defined('HJI_BLVD_SCSS')) {
     define('HJI_BLVD_SCSS', true);
 }
 
-if (!function_exists('hji_widgets_child_init')) {
+if (!function_exists('hji_number_one_widgets')) {
     function hji_widgets_child_init() {
         register_sidebar( array(
             'id'            => 'hjitw-home-first-widgets',
@@ -43,5 +43,12 @@ if (!function_exists('hji_widgets_child_init')) {
         unregister_sidebar( 'blvd-footerwidgets');
         unregister_sidebar( 'blvd-homewidgets');
     }
-    add_action('widgets_init', 'hji_widgets_child_init', 11);
+    add_action('widgets_init', 'hji_number_one_widgets', 11);
+}
+
+if ( !function_exists( 'hji_exit_number_one_load_fonts' ) ) {
+    function hji_exit_number_one_load_fonts() {
+        wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Dancing+Script' );
+    }
+    add_action( 'wp_enqueue_scripts', 'hji_number_one_load_fonts' );
 }
