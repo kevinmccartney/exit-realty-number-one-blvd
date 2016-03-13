@@ -1,38 +1,9 @@
+// margins & box shadow for all content
 body:not(.home) #content {
     margin: 5rem auto;
     padding: 2rem;
     background-color: $white;
     box-shadow: $black 1px 2px 20px;
-}
-
-h2.partner-name {
-    margin-bottom: 0;
-    color: $brand-primary;
-}
-
-.partner-profession {
-    margin: 0.5rem auto;
-    color: $brand-third;
-    font-family: 'Helvetica Nueue', sans-serif;
-    font-wieght: bold;
-}
-
-p.parter-company {
-    margin: 0.5rem auto 0 auto;
-    color: $black;
-    font-weight: bold;
-    font-size: 1.75rem;
-}
-
-.seller-video-wrapper {
-    @media (min-width: $screen-md) {
-        width: 75%;
-        margin: auto;
-    }
-}
-
-.post-type-archive .agent-data {
-    min-height: 165px;
 }
 
 /** 
@@ -123,15 +94,27 @@ p.parter-company {
     }
 }
 
-img.partner-logo {
-    margin-top: 1rem;
+h2.partner-name {
+    margin-bottom: 0;
+    color: $brand-primary;
 }
 
-.partner-company {
+.partner-profession {
+    margin: 0.5rem auto;
+    color: $brand-third;
+    font-family: 'Helvetica Nueue', sans-serif;
+    font-wieght: bold;
+}
+
+p.partner-company {
     margin: 0.5rem auto 0 auto;
-    color: #000;
+    color: $black;
     font-weight: bold;
     font-size: 1.75rem;
+}
+
+img.partner-logo {
+    margin-top: 1rem;
 }
 
 // sizing & positioning the agent photos
@@ -152,12 +135,20 @@ img.partner-logo.diana-dikes {
     height: 200px;
 }
 
-// our services wrapper
+// our services page
 .our-services-link-wrapper {
     font-size: 2rem;
 }
 
-// agents 
+// sizing the agent "pods" in the agents archive
 .post-type-archive .agent-data {
     min-height: 165px;
+}
+
+// seller videos page
+.seller-video-wrapper {
+    @media (min-width: $screen-md) {
+        width: 75%;
+        margin: auto;
+    }
 }

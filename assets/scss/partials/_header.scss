@@ -1,3 +1,4 @@
+// the header needs to be bigger so that everything will fit!
 .header-widgets.container {
     @media (min-width: $grid-float-breakpoint) {
         width: 98%;
@@ -8,6 +9,7 @@
     padding: 10px 3rem;
 }
 
+// adding a key icon to the login link
 .user-signup-header {
     .hji-user-signup {
         &:before {
@@ -18,7 +20,6 @@
             color: $white;
             font-family: FontAwesome;
         }
-        
         &:hover {
             text-decoration: none;
             color: $brand-primary;
@@ -26,6 +27,7 @@
     }
 }
 
+// aligning the top header menu to the right
 .custom-header-menu ul li {
     float: right;
 }
@@ -53,12 +55,13 @@
             color: $white;
             background-color: $brand-primary;
         }
-        @media(min-width: $screen-lg) {
+        @media (min-width: $screen-lg) {
             font-size: 14px;
         }
     }
 }
 
+// sizing the logo
 a.navbar-brand {
     width: 75%;
     @media (min-width: 480px) {
@@ -75,7 +78,6 @@ a.navbar-brand {
 .navbar-default .navbar-toggle {
     border: 0;
     background-color: $brand-primary;
-    
     &:hover,
     &:focus,
     &:active {
@@ -91,6 +93,7 @@ a.navbar-brand {
     text-align: center;
 }
 
+// the next four rules govern the contact info & button in the header
 .header-custom-contact {
     margin-top: 2rem;
 }
@@ -115,9 +118,11 @@ a.email_text {
     margin-top: 1rem;
     padding: 1rem 10%;
     background-color: #f0f0f0;
+    -webkit-transition: ease 0.3s;
     transition: ease 0.3s;
 }
 
+// direct selectors are important here, or else the dropdowns wil have a border too!
 .blvd-responsive-menu nav > ul > li {
     @media (min-width: $grid-float-breakpoint) {
         border-right: 1px solid $brand-primary-light-20;
@@ -133,7 +138,7 @@ a.email_text {
 }
 
 .blvd-responsive-menu .dropdown-menu > li > a {
-    @media(min-width: $grid-float-breakpoint) {
+    @media (min-width: $grid-float-breakpoint) {
         &:hover,
         &:active,
         &:focus {
@@ -144,6 +149,7 @@ a.email_text {
     }
 }
 
+// changing the color of the links on mobile so they are visible
 .blvd-responsive-menu .nav li ul li a,
 .blvd-responsive-menu .nav li a {
     @media (max-width: $grid-float-breakpoint) {

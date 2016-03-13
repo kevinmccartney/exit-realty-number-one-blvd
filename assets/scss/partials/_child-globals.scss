@@ -1,7 +1,7 @@
 a.listing-title {
-    @include pretty_hover(none, $brand-primary, ease 0.35s);
+    @include pretty_hover(none, $brand-primary-light-20, ease 0.35s);
     h4 {
-        @include pretty_hover(none, $brand-primary, ease 0.35s);
+        @include pretty_hover(none, $brand-primary-light-20, ease 0.35s);
     }
 }
 
@@ -30,15 +30,8 @@ ul.nav.nav-tabs,
     @include tab_styling;
 }
 
-.rel-listing-wrap .btn-wrapper > div, 
-.idx-results .idx-result-snippet .btn-wrapper > div {
-    @media(min-width: $screen-sm) and (max-width: $screen-lg) {
-        margin: 6px 5%;
-    }
-}
-
 // overrriding the button margins on ipads
-@media (max-width: 1200px) and (min-width: 768px) {
+@media (max-width: $screen-lg) and (min-width: $screen-sm) {
     .rel-listing-wrap .btn-wrapper > div, 
     .idx-results .idx-result-snippet .btn-wrapper > div {
         margin: 2% 4% !important;
@@ -49,15 +42,3 @@ ul.nav.nav-tabs,
 input.save-search-btn.btn {
     background-color: #C0C0C0;
 }
-
-//
-// not sure if these belong
-// --------------------------------------------------
-
-// .grid-item {
-//     width: calc(50% - 20px);
-//     @media(min-width: $screen-md) {
-//         width: calc(33.333% - 20px);
-//         margin-bottom: 20px;
-//     }
-// }

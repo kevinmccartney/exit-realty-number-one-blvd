@@ -1,8 +1,10 @@
+// center everything
 #footer {
     text-align: center;
     margin-top: 0;
 }
 
+// the footer resources menu
 .footer-menu-wrapper {
     .nav {
         display: inline-block;
@@ -26,22 +28,14 @@
     }
 }
 
-#copyright {
-    margin-top: 3rem;
-}
-
-
-.idx-disclaimer img {
-    margin: 1rem;
-}
-
+// adding borders to the social media icons
 .socialmedia-footer {
     .fa {
         -webkit-transition: all 0.5s ease-in-out 0s;
         transition: all 0.5s ease-in-out 0s;
         &:hover,
         &:focus,
-        &:active{
+        &:active {
             color: $brand-primary;
         }
         &:before {
@@ -55,12 +49,19 @@
             margin: 10px;
             -webkit-transition: all 0.5s ease-in-out 0s;
             transition: all 0.5s ease-in-out 0s;
-
             &:hover,
             &:focus,
-            &:active{
+            &:active {
                 border-color: $brand-primary;
             }
         }
     }
+}
+
+#copyright {
+    margin-top: 3rem;
+}
+
+.idx-disclaimer img {
+    margin: 1rem;
 }

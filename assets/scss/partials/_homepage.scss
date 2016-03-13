@@ -1,4 +1,4 @@
-/* resetting fonts on homepage */
+// resetting fonts on homepage
 .home {
     h1,
     h2,
@@ -12,7 +12,7 @@
     .about-us-subtitle,
     a.listing-title h4,
     h3.service-cta-title {
-        font-family: Montserrat, 'Arial', 'Helvetica', 'Sans Serif';
+        font-family: 'Montserrat', 'Arial', 'Helvetica', 'Sans Serif';
     }
 }
 
@@ -20,24 +20,13 @@
     box-shadow: $brand-third 0px 10px 20px;
 }
 
-.home .quick-search-widget-wrapper {
-    background-color: transparent;
-}
-
-.first-widget {
-    margin-top: 25rem;
-    padding: 4rem 0px;
-    @media(min-width: $screen-md) and (max-width: $screen-lg) {
-        margin-top: 35rem;
-    }
-}
-
 /**
- * BEGIN $custom_homepage_widgets
+ * BEGIN $custom_homepage_widget
  * These styles govern the custom quicksearch/home valuation widget
  * on the homepage.
  */
 
+// the entire container
 .homepage-custom-widget {
     margin-top: 10rem;
     text-align: center;
@@ -56,7 +45,7 @@
     }
 }
 
-/* styling for the menu item links */
+// the menu item links
 .homepage-custom-widget-menu-link {
     width: 150px;
     opacity: 0.8;
@@ -79,6 +68,7 @@
     }
 }
 
+// ensuring the active link is opaque enough
 li.active .homepage-custom-widget-menu-link {
     opacity: 0.9;
     background-color: $brand-primary;
@@ -101,10 +91,14 @@ h1.custom-widget-title {
     padding: 1rem 2rem;
 }
 
+.home .quick-search-widget-wrapper {
+    background-color: transparent;
+}
+
 // so the "Our Services" text doesn't run into the slideshow
 div#sale {
     margin-bottom: 10rem;
-    @media(min-width: $screen-md) {
+    @media (min-width: $screen-md) {
         margin-bottom: 5rem;
     }
 }
@@ -119,17 +113,18 @@ div#sale {
 .first-widget {
     margin-top: 25rem;
     padding: 4rem 0px;
-    @media(min-width: $screen-md) {
+    @media (min-width: $screen-md) {
         margin-top: 30rem;
     }
-    @media(min-width: $screen-lg) {
+    @media (min-width: $screen-lg) {
         margin-top: 15rem;
     }
-    // targetting only desktop chrome
+    // targeting only desktop chrome
     @media screen and (min-width: $screen-lg) and (-webkit-min-device-pixel-ratio: 0) {
         margin-top: 10rem;
     }
 }
+
 .our-services-title {
     margin-bottom: 20px;
     font-size: 3.5em;
@@ -139,6 +134,7 @@ div#sale {
     text-align: center;
 }
 
+// sizing the photo
 .service-cta-photo {
     width: 75%;
     margin: auto;
@@ -148,6 +144,7 @@ div#sale {
     }
 }
 
+// flexbox!
 .service-cta-textbox {
     display: -webkit-box;
     display: -webkit-flex;
@@ -177,17 +174,12 @@ div#sale {
     text-transform: uppercase;
 }
 
-.video-wrapper {
-    margin: auto;
-    @media (min-width: $screen-sm) {
-        width: 75%;
-    }
-}
-
+// a slight margin for the YouTube videos
 .homepage-video-pod {
     margin-bottom: 5%;
 }
 
+// the single rIDX listings next to the YouTube videos
 .home .widget_promoted_listings_widget {
     @media (min-width: 480px) and (max-width: $screen-md) {
         margin-top: 5rem;
@@ -201,12 +193,14 @@ div#sale {
     }
 }
 
-/* END $first_homepage_widgets */
+/** 
+ * END $first_homepage_widgets 
+ */
 
 /**
  * BEGIN $second_homepage_widgets
  * These styles govern the second widget area on the homepage.
-*/
+ */
 
 .second-widget {
     background: $brand-primary;
@@ -221,6 +215,7 @@ div#sale {
     }
 }
 
+// the recent posts widget to the left
 .widget_recent_entries {
     padding: 2rem;
     background: $black;
@@ -254,6 +249,7 @@ div#sale {
     font-size: 3.5em;
 }
 
+// resetting the font-famiy for the subtitle
 .about-us-subtitle {
     color: $white;
     font-family: $navbar-font-family;
@@ -261,7 +257,9 @@ div#sale {
     text-transform: uppercase;
 }
 
-/* END $second_homepage_widgets */
+/** 
+ * END $second_homepage_widgets 
+ */
 
 /**
  * BEGIN $third_homepage_widgets
@@ -269,7 +267,7 @@ div#sale {
  */
 
 .third-widget {
-    @media(min-width: $screen-md) {
+    @media (min-width: $screen-md) {
         padding: 4rem 0;
     }
 }
@@ -280,6 +278,7 @@ h1.affiliations-title {
     text-align: center;
 }
 
+// flex!
 .clients-logo {
     display: -webkit-box;
     display: -webkit-flex;
@@ -296,7 +295,6 @@ h1.affiliations-title {
     justify-content: center;
     min-height: 275px;
     text-align: center;
-    
     @media (min-width: 992px) {
         border-right: 1px solid $brand-second;
         &:last-child {
