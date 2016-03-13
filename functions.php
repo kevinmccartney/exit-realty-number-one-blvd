@@ -43,7 +43,7 @@ if (!function_exists('hji_exit_number_one_widgets')) {
         unregister_sidebar( 'blvd-footerwidgets');
         unregister_sidebar( 'blvd-homewidgets');
     }
-    add_action('widgets_init', 'hji_number_one_widgets', 11);
+    add_action('widgets_init', 'hji_exit_number_one_widgets', 11);
 }
 
 if ( !function_exists( 'hji_exit_number_one_load_fonts' ) ) {
