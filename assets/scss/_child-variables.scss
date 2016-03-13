@@ -9,44 +9,8 @@ $brand-third: #898989;
 
 $brand-primary-light-10: lighten($brand-primary, 10%);
 $brand-primary-light-20: lighten($brand-primary, 20%);
-
 $brand-primary-dark-20: darken($brand-primary, 20%);
 $brand-primary-dark-30: darken($brand-primary, 30%);
 
 $white: #fff;
 $black: #000;
-
-/**
- * a mixin for a custom hover effect. Can set several properties related to link hover behavior.
- * uncomment the commented lines for even more functionality.
- */
-@mixin pretty_hover($pretty_decoration, $pretty_color, $pretty_trans) {
-    -webkit-transition: $pretty_trans;
-    transition: $pretty_trans;
-    &:hover,
-    &:active {
-        text-decoration: $pretty_decoration;
-        /* text-shadow: $pretty_shadow; */
-        color: $pretty_color !important;
-        /* background-color: $pretty_bg_color !important; */
-    }
-}
-
-@mixin no_borders {
-    border: 0;
-}
-
-@mixin tab_styling {
-    @include no_borders;
-    background-color: $brand-primary;
-    color: $white;
-    text-shadow: $brand-primary-dark-20 2px 2px 4px;
-}
-
-@mixin mobile_landscape {
-    $mobile_landscape_min: 480px;
-    $mobile_landscape_max: 767px;
-    @media (min-width: $mobile_landscape_min) and (max-width: $mobile_landscape_max) {
-        @content;
-    }
-}
