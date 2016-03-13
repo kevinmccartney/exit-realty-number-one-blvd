@@ -10,7 +10,7 @@ if (!defined('HJI_BLVD_SCSS')) {
 }
 
 if (!function_exists('hji_number_one_widgets')) {
-    function hji_widgets_child_init() {
+    function hji_number_one_widgets() {
         register_sidebar( array(
             'id'            => 'hjitw-home-first-widgets',
             'name'          => __( 'Home Page First Widget', 'hji_themework' ),
