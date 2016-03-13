@@ -105,13 +105,19 @@ h1.custom-widget-title {
  */
 
 .first-widget {
-    margin-top: 10rem;
+    margin-top: 20rem;
     padding: 4rem 0px;
-    @media(min-width: $screen-md) and (max-width: $screen-lg) {
-        margin-top: 25rem;
+    @media(min-width: $screen-md) {
+        margin-top: 30rem;
+    }
+    @media(min-width: $screen-lg) {
+        margin-top: 15rem;
+    }
+    // targetting only desktop chrome
+    @media screen and (min-width: $screen-lg) and (-webkit-min-device-pixel-ratio: 0) {
+        margin-top: 10rem;
     }
 }
-
 .our-services-title {
     margin-bottom: 20px;
     font-size: 3.5em;
