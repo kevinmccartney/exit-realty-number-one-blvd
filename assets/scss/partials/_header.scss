@@ -76,12 +76,11 @@ a.navbar-brand {
 }
 
 .navbar-default .navbar-toggle {
-    border: 0;
+    @include no_borders;
     background-color: $brand-primary;
     &:hover,
     &:focus,
     &:active {
-        border: 0;
         background-color: $brand-primary-light-10;
     }
 }
