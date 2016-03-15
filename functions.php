@@ -5,11 +5,16 @@
  *
  * @since 2.7.0
  */
-if (!defined('HJI_BLVD_SCSS')) {
-    define('HJI_BLVD_SCSS', true);
-}
+if( !defined( 'HJI_BLVD_SCSS' ) ) :
+    define( 'HJI_BLVD_SCSS', true );
+endif;
 
-if (!function_exists('hji_exit_number_one_widgets')) {
+
+/**
+ * registering the child widget areas & deregistering a few 
+ * uneeded widget areas
+ */
+if( !function_exists( 'hji_exit_number_one_widgets' ) ) :
     function hji_exit_number_one_widgets() {
         register_sidebar( array(
             'id'            => 'hjitw-home-first-widgets',
@@ -44,11 +49,14 @@ if (!function_exists('hji_exit_number_one_widgets')) {
         unregister_sidebar( 'blvd-homewidgets');
     }
     add_action('widgets_init', 'hji_exit_number_one_widgets', 11);
-}
+endif;
 
-if ( !function_exists( 'hji_exit_number_one_load_fonts' ) ) {
+/**
+ * Loading in extra fonts
+ */
+if ( !function_exists( 'hji_exit_number_one_load_fonts' ) ) :
     function hji_exit_number_one_load_fonts() {
         wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Dancing+Script' );
     }
     add_action( 'wp_enqueue_scripts', 'hji_exit_number_one_load_fonts' );
-}
+endif;
